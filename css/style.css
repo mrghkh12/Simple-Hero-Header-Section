@@ -69,3 +69,25 @@
     color: #212121;
     font-weight: 600;
 }
+
+.container .heroImg-section{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.container .heroImg-section img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+.container .heroImg-section:hover .back-img{
+    bottom: 40px;
+}
+.container .heroImg-section:hover .main-img{
+    left: 54%;
+}
