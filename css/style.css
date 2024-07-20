@@ -91,3 +91,17 @@
 .container .heroImg-section:hover .main-img{
     left: 54%;
 }
+
+.container .social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+.container .social-links a{
+    font-size: 30px;
+    color: #606163;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.container .social-links a:hover{
+    color: #ff4321;
+}
