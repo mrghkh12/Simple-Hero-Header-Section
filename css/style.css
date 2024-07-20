@@ -36,3 +36,36 @@
 .container .navbar-menu .menu li a:hover{
     color: #ff4321;
 }
+
+.container .infoSection{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.container .infoSection .info-title{
+    font-size: 70px;
+    color: #212121;
+}
+.container .infoSection .info-title span{
+    color: #ff4321;
+}
+.container .infoSection .info-comment{
+    color: #606163;
+    line-height: 22px;
+}
+.container .infoSection .info-link{
+    background: #212121;
+    border: 1px solid #212121;
+    font-weight: 600;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.container .infoSection .info-link:hover{
+    background: transparent;
+    color: #212121;
+    font-weight: 600;
+}
