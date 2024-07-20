@@ -4,10 +4,19 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
 .container{
     height: 100vh;
     width: 100%;
-    background: #edf2fc;
+    background: var(--primary-color);
     position: relative;
 }
 
@@ -22,6 +31,10 @@
 .container .navbar-menu .nav-logo{
     width: 100px;
     cursor: pointer;
+}
+.container .navbar-menu .menu{
+    flex: 1;
+    text-align: right;
 }
 .container .navbar-menu .menu li{
     display: inline-block;
@@ -43,7 +56,7 @@
 }
 .container .infoSection .info-title{
     font-size: 70px;
-    color: #212121;
+    color: var(--secondary-color);
 }
 .container .infoSection .info-title span{
     color: #ff4321;
@@ -53,8 +66,8 @@
     line-height: 22px;
 }
 .container .infoSection .info-link{
-    background: #212121;
-    border: 1px solid #212121;
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     font-weight: 600;
     padding: 10px 18px;
     text-decoration: none;
@@ -66,7 +79,7 @@
 }
 .container .infoSection .info-link:hover{
     background: transparent;
-    color: #212121;
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -104,4 +117,10 @@
 }
 .container .social-links a:hover{
     color: #ff4321;
+}
+
+
+.container .navbar-menu .chenge-theme .icon{
+    width: 30px;
+    cursor: pointer;
 }
