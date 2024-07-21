@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme {
+  --primary-color: #212121;
+  --secondary-color: #fff;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: var(--primary-color);
+  position: relative;
+}
+
+.container .navbar-menu {
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.container .navbar-menu .nav-logo {
+  width: 100px;
+  cursor: pointer;
+}
+.container .navbar-menu .menu {
+  flex: 1;
+  text-align: right;
+}
+.container .navbar-menu .menu li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+.container .navbar-menu .menu li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+.container .navbar-menu .menu li a:hover {
+  color: #ff4321;
+}
+
+.container .infoSection {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+.container .infoSection .info-title {
+  font-size: 70px;
+  color: var(--secondary-color);
+}
+.container .infoSection .info-title span {
+  color: #ff4321;
+}
+.container .infoSection .info-comment {
+  color: #606163;
+  line-height: 22px;
+}
+.container .infoSection .info-link {
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-weight: 600;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.container .infoSection .info-link:hover {
+  background: transparent;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.container .heroImg-section {
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.container .heroImg-section img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+.container .heroImg-section:hover .back-img {
+  bottom: 40px;
+}
+.container .heroImg-section:hover .main-img {
+  left: 54%;
+}
+
+.container .social-links {
+  margin-left: 8%;
+  margin-top: 100px;
+}
+.container .social-links a {
+  font-size: 30px;
+  color: var(--secondary-color);
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.container .social-links a:hover {
+  color: #ff4321;
+}
+.show-menu {
+  display: none !important;
+}
+
+.container .navbar-menu .chenge-theme .icon {
+  width: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1080px) {
+  .container .heroImg-section {
+    width: 40%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .show-menu {
+    display: block !important;
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-right: 10px;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+  .menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -200px;
+    width: 100vw;
+    display: flex !important;
+    flex-direction: column;
+    background: var(--primary-color);
+    transition: 1s;
+  }
+  .menu li a {
+    display: block !important;
+    text-align: center;
+  }
+  .show {
+    top: 100px;
+
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container .heroImg-section {
+    display: none;
+  }
+  .container .infoSection {
+    margin: auto;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .container .social-links {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .show-menu {
+    display: none !important;
+  }
+  .show-menu {
+    display: block !important;
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-right: 10px;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+  .menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -200px;
+    width: 100vw;
+    display: flex !important;
+    flex-direction: column;
+    background: var(--primary-color);
+    transition: 1s;
+  }
+  .menu li a {
+    display: block !important;
+    text-align: center;
+  }
+  .show {
+    top: 100px;
+
+    z-index: 5;
+  }
+}
