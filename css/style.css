@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .container .navbar-menu .nav-logo{
     width: 100px;
@@ -84,7 +85,7 @@
 }
 
 .container .heroImg-section{
-    width: 45%;
+    width: 35%;
     height: 80%;
     position: absolute;
     bottom: 0;
@@ -92,6 +93,7 @@
 }
 .container .heroImg-section img{
     height: 100%;
+    width: 100%;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -118,9 +120,102 @@
 .container .social-links a:hover{
     color: #ff4321;
 }
-
+.show-menu{
+    display: none !important;
+}
 
 .container .navbar-menu .chenge-theme .icon{
     width: 30px;
     cursor: pointer;
+}
+@media screen and (max-width: 1080px) {
+    .container .heroImg-section{
+        width: 40%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .show-menu{
+        display: block !important;
+        position: absolute;
+        right: 25px;
+        font-size: 20px;
+        padding-top: 1px;
+        padding-right: 10px;
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
+    .menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -200px;
+        width: 100vw;
+        display: flex !important;
+        flex-direction: column;
+        background: var(--primary-color);
+        transition: 1s;
+    }
+    .menu li a{
+        display: block !important;
+        text-align: center;
+    }
+    .show {
+
+        top: 100px;
+
+
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .container .heroImg-section{
+        display: none;
+    }
+    .container .infoSection{
+        margin: auto;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .container .social-links{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .show-menu{
+        display: none !important;
+    }
+    .show-menu{
+        display: block !important;
+        position: absolute;
+        right: 25px;
+        font-size: 20px;
+        padding-top: 1px;
+        padding-right: 10px;
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
+    .menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -200px;
+        width: 100vw;
+        display: flex !important;
+        flex-direction: column;
+        background: var(--primary-color);
+        transition: 1s;
+    }
+    .menu li a{
+        display: block !important;
+        text-align: center;
+    }
+    .show {
+
+        top: 100px;
+
+
+        z-index: 5;
+    }
 }
