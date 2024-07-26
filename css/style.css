@@ -39,13 +39,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
-.container .navbar-menu .menuBox .menu-ctrl{
+.container .navbar-menu .menuBox .menu-ctrl {
   display: none;
-  
 }
-.container .navbar-menu .menuBox .menu-ctrl i.show-menu{
+.container .navbar-menu .menuBox .menu-ctrl i.show-menu {
   color: var(--secondary-color);
 }
 .container .navbar-menu .menu li {
@@ -71,7 +69,7 @@
   justify-content: center;
   padding: 0 25px;
 }
-.container .infoSection .info-text{
+.container .infoSection .info-text {
   width: 50%;
   display: flex;
   position: absolute;
@@ -109,7 +107,7 @@
   font-weight: 600;
 }
 
-.container .infoSection .info-img{
+.container .infoSection .info-img {
   width: 25%;
   position: absolute;
   right: 10%;
@@ -150,18 +148,17 @@
   color: #ff4321;
 }
 
-
 .container .navbar-menu .chenge-theme .icon {
   width: 30px;
   cursor: pointer;
 }
 
 @media screen and (max-width: 825px) {
-  .container .navbar-menu .menuBox .menu-ctrl{
+  .container .navbar-menu .menuBox .menu-ctrl {
     display: block;
     padding-right: 10px;
   }
-  .container .navbar-menu .menuBox .menu{
+  .container .navbar-menu .menuBox .menu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -175,40 +172,40 @@
     z-index: 5;
     transition: 0.5s;
   }
-  .container .navbar-menu .menuBox .menu.show{
+  .container .navbar-menu .menuBox .menu.show {
     top: 100px !important;
     opacity: 1;
   }
-  .container .social-links{
+  .container .social-links {
     margin-top: 20px;
   }
   .container .infoSection {
     height: 83.5%;
   }
 }
-@media screen and (max-width: 530px){
-  .container .infoSection{
+@media screen and (max-width: 530px) {
+  .container .infoSection {
     height: auto;
     position: static;
   }
-  .container .infoSection .info-img{
+  .container .infoSection .info-img {
     display: none;
   }
-  .container .infoSection .info-text{
+  .container .infoSection .info-text {
     position: static;
     text-align: center;
     width: 90%;
   }
-  .container .infoSection .info-text .info-link{
+  .container .infoSection .info-text .info-link {
     display: block;
     margin: 20px auto;
   }
-  .container .social-links{
+  .container .social-links {
     margin: 0 auto;
     margin-top: 20px;
     display: block;
   }
-  .container .social-links a{
+  .container .social-links a {
     margin: 0 10px;
   }
 }
